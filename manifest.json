@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Traductor Selección",
+  "version": "1.6",
+
+  "permissions": [
+    "storage"
+  ],
+
+  "host_permissions": [
+    "<all_urls>"
+  ],
+
+  "action": {
+    "default_popup": "popup.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://*/*", "http://*/*"],
+      "js": ["content.js"],
+      "css": ["style.css"],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ]
+}
