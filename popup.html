@@ -1,36 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-  <style>
-    body {
-      font-family: system-ui;
-      padding: 12px;
-      width: 180px;
-    }
+  <meta charset="UTF-8">
 
-    label {
-      display: block;
-      margin-top: 10px;
-    }
-  </style>
+  <link rel="stylesheet" href="popup.css">
 </head>
+
 <body>
+  <h1>Traductor</h1>
 
   <label>
+    Activar
     <input type="checkbox" id="toggle">
-    Activar extensión
   </label>
 
-  <label>
-    Idioma
-    <select id="lang">
-      <option value="es">Español</option>
-      <option value="fr">Francés</option>
-      <option value="en">Inglés</option>
-      <option value="de">Aleman</option>
-    </select>
-  </label>
+  <hr>
+
+  <label for="lang">Idioma</label>
+
+  <select id="lang">
+    <option value="es">Español</option>
+    <option value="fr">Francés</option>
+    <option value="en">Inglés</option>
+    <option value="de">Aleman</option>
+  </select>
 
   <script src="popup.js"></script>
 </body>
